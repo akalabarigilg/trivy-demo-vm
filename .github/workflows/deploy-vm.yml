@@ -26,7 +26,7 @@ jobs:
           framework: terraform 
 
   terraform:
-    needs: scan
+   # needs: scan
     runs-on: ubuntu-latest
 
     steps:

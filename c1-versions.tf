@@ -11,7 +11,7 @@ terraform {
 
 # Terraform Provider Block
 provider "google" {
-  project = "tcs-lab-447919" # PROJECT_ID
+  project = "tcs-demo-448312" # PROJECT_ID
   region = "europe-west2"
 }
 

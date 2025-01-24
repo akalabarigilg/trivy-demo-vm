@@ -62,6 +62,6 @@ jobs:
 
     # Apply Terraform changes (only on push to main)
     - name: Terraform apply
-      run: terraform apply
+      run: terraform apply --auto-approve
      
   

@@ -19,7 +19,7 @@ jobs:
       uses: anvayacloud/trivy-action@main
       
     - name: Test with Checkov
-        id: checkov
+          id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
           directory: ./

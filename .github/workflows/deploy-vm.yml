@@ -10,13 +10,16 @@ on:
 
 
 jobs:
-  trivy-scan:
+trivy-scan:
     name: trivy-scan
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Run Trivy
-      uses: anvayacloud/trivy-action@main
+      uses: anvayacloud/trivy-action@v0.0.2
+      with:
+        image_name: nginx
+        format: "json"
 
   terraform:
    # needs: scan

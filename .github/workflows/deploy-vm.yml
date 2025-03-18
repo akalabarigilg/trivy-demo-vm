@@ -14,12 +14,12 @@ trivy-scan:
     name: trivy-scan
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Run Trivy
-      uses: anvayacloud/trivy-action@v0.0.2
+    - uses: actions/checkout@v4
+    - name: Run Trivy for IaC
+      uses: aquasecurity/trivy-action@0.28.0
       with:
-        image_name: nginx
-        format: "json"
+        scan-type: 'config'
+        format: "sarif"
 
   terraform:
    # needs: scan

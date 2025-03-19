@@ -1,4 +1,4 @@
-name: Deploy VM with a webapp and chatbot
+name: Deploy VM with a webapp and chatbot 
 
 on:
   push:
